@@ -62,6 +62,12 @@ JOIN Bookings b ON c.CustomerID = b.CustomerID
 GROUP BY c.CustomerID
 ORDER BY Revenue DESC;
 ```
+📸 Screenshots
+### Query Output
+![Query Output](screenshots/query_output.png)
+
+### ER Diagram
+![ER Diagram](screenshots/er_diagram.png)
 
 ## 🧠 Learning Outcomes
 
