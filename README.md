@@ -1,33 +1,84 @@
+# 🏨 Hotel Booking Data Analysis (SQL Project)
 
-Hotel Booking Data Analysis (SQL Project)
-  Project Overview
+## 📌 Project Overview
 
-This project demonstrates the design and implementation of a Hotel Booking System using SQL. It includes database creation, table relationships, and data analysis to generate business insights.
+This project focuses on designing a relational database for a Hotel Booking System and performing SQL-based data analysis to extract meaningful business insights.
 
- Tools Used
-SQL (MySQL)
-Database Design
- Tables
-Customers
-Rooms
-Staff
-Bookings
-Payments
- Key Features
-Relational database design
-Primary & Foreign key implementation
-Real-world SQL queries
- Analysis
-Top customers by spending
-Most booked room types
-Monthly revenue trends
-Staff performance analysis
+It simulates a real-world hotel management scenario including customers, bookings, staff, rooms, and payments.
 
-Conclusion
+---
 
-This project showcases my SQL and data analysis skills for real-world business problems.
+## 🛠️ Tools & Technologies
 
- Author
+* SQL (MySQL)
+* Relational Database Design
+* Data Analysis
 
-Kamlesh Gujar
+---
+
+## 🗂️ Database Structure
+
+The database consists of 5 main tables:
+
+* Customers
+* Rooms
+* Staff
+* Bookings
+* Payments
+
+All tables are connected using **Primary Keys and Foreign Keys** to maintain data integrity.
+
+---
+
+## 🔑 Key Features
+
+* Designed normalized database schema
+* Implemented relationships between multiple tables
+* Performed complex SQL queries using:
+
+  * JOIN
+  * GROUP BY
+  * Aggregations
+
+---
+
+## 📊 Business Analysis
+
+The following insights were derived:
+
+* Identified **top customers by revenue**
+* Found **most booked room types**
+* Analyzed **monthly revenue trends**
+* Evaluated **staff performance**
+
+---
+
+## 📈 Sample Queries
+
+```sql
+SELECT c.FirstName, SUM(b.TotalAmount) AS Revenue
+FROM Customers c
+JOIN Bookings b ON c.CustomerID = b.CustomerID
+GROUP BY c.CustomerID
+ORDER BY Revenue DESC;
+```
+
+## 🧠 Learning Outcomes
+
+* Real-world database design
+* SQL query optimization
+* Business data analysis
+
+---
+
+## 🚀 Conclusion
+
+This project demonstrates my ability to work with structured data, design databases, and extract actionable insights — key skills for a Data Analyst role.
+
+---
+
+## 👨‍💻 Author
+
+**Kamlesh Gujar**
 Aspiring Data Analyst
+
