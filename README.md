@@ -1,3 +1,4 @@
+🚀 End-to-end SQL project demonstrating database design, data analysis, and real-world business insights.
 # 🏨 Hotel Booking Data Analysis (SQL Project)
 
 ## 📌 Project Overview
